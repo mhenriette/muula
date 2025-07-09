@@ -1,40 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Muula - AI-Powered Career Advice Platform
 
-## Getting Started
+![Muula Screenshot](public/image.png)
 
-First, run the development server:
+## 🚀 About
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Muula is an intelligent career advice platform that provides personalized guidance based on your professional background and aspirations. Built with Next.js and powered by AI, it helps users discover new career opportunities and skill development paths.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- **AI-Powered Career Advice**: Get personalized career guidance based on your skills and experience
+- **Interactive Form**: Easy-to-use interface for sharing your professional background
+- **Real-time Responses**: Instant AI-generated advice with detailed recommendations
+- **Share Functionality**: Share your career advice with others via native sharing or clipboard
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Modern UI**: Clean, professional interface with smooth animations
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 🛠️ Tech Stack
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+- **Frontend**: Next.js, React, TypeScript
+- **Styling**: Tailwind CSS
+- **AI Integration**: OpenAI API
+- **Markdown Rendering**: React Markdown with GFM support
+- **UI Components**: Custom components with modern design
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js (v14 or higher)
+- npm or yarn
+- OpenAI API key
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+### Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/muula.git
+   cd muula
+   ```
 
-## Deploy on Vercel
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Set up environment variables**
+   Create a `.env.local` file in the root directory:
+   ```env
+   OPENAI_API_KEY=your_openai_api_key_here
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+4. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 📝 Usage
+
+1. **Fill out the form** with your professional information:
+   - First and last name
+   - Email address
+   - Current skill/role
+   - Professional experience and achievements
+
+2. **Submit your request** and wait for AI-generated advice
+
+3. **Review your personalized career advice** in the popup drawer
+
+4. **Share or start again** using the provided buttons
+
+## 🎯 How It Works
+
+The platform uses OpenAI's GPT model to analyze your professional background and provide:
+
+- **Summary of your experience**: AI summarizes your professional journey
+- **Personalized advice**: Tailored recommendations based on your skills
+- **Skill suggestions**: 2 new skill areas to consider for career growth
+
+## 🔧 API Endpoints
+
+- `POST /api/advice`: Processes career advice requests
+  - Body: `{ skill: string, message: string }`
+  - Returns: AI-generated career advice
+
+## 📱 Features in Detail
+
+### AI Career Coach
+- Analyzes your professional background
+- Provides actionable career advice
+- Suggests new skill development areas
+- Offers personalized growth recommendations
+
+### User Experience
+- Clean, intuitive interface
+- Real-time form validation
+- Loading states and error handling
+- Responsive design for all devices
+
+### Sharing & Collaboration
+- Native sharing on mobile devices
+- Clipboard fallback for desktop
+- Easy restart functionality
+- Persistent session management
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- OpenAI for providing the AI capabilities
+- Next.js team for the amazing framework
+- Tailwind CSS for the beautiful styling system
+
+---
+
+**Built with ❤️ for career development and growth**
